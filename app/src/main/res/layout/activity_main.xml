@@ -5,13 +5,16 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".MainActivity" android:orientation="vertical" android:padding="10pt">
+        tools:context=".MainActivity" android:orientation="vertical" android:padding="10pt"
+        android:background="@color/gray">
     <EditText
             android:layout_width="match_parent"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editText3" android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:layout_height="match_parent" android:text="0" android:gravity="right"/>
+            android:layout_height="match_parent" android:text="0" android:gravity="right"
+            android:paddingTop="10pt" android:background="@color/gray" android:textSize="40sp"
+            android:textColor="@color/white"/>
     <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -20,80 +23,84 @@
                 android:layout_height="match_parent">
             <Button
                     android:text="AC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button15"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button15" android:background="@color/whiteback"/>
             <Button
                     android:text="+/-"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button14"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button14" android:background="@color/whiteback"/>
             <Button
                     android:text="%"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button13"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button13" android:background="@color/whiteback"/>
             <Button
                     android:text="\u00f7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button12"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button12" android:background="@color/buop"
+                    android:textColor="@color/white"/>
         </TableRow>
         <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             <Button
                     android:text="7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button11"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button11" android:background="@color/whiteback"/>
             <Button
                     android:text="8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button10"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button10" android:background="@color/whiteback"/>
             <Button
                     android:text="9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button9"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button9" android:background="@color/whiteback"/>
             <Button
                     android:text="\u00d7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button8"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button8" android:background="@color/buop"
+                    android:textColor="@color/white"/>
         </TableRow>
         <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             <Button
                     android:text="4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button7"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button7" android:background="@color/whiteback"/>
             <Button
                     android:text="5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button6"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button6" android:background="@color/whiteback"/>
             <Button
                     android:text="6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button5"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button5" android:background="@color/whiteback"/>
             <Button
                     android:text="\u2212"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button4"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button4" android:background="@color/buop"
+                    android:textColor="@color/white"/>
         </TableRow>
         <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             <Button
                     android:text="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button19"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button19" android:background="@color/whiteback"/>
             <Button
                     android:text="2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button18"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button18" android:background="@color/whiteback"/>
             <Button
                     android:text="3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button17"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button17" android:background="@color/whiteback"/>
             <Button
                     android:text="\u002b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button16"/>
+                    android:layout_width="30pt"
+                    android:layout_height="30pt" android:id="@+id/button16" android:background="@color/buop"
+                    android:textColor="@color/white"/>
         </TableRow>
     </TableLayout>
     <LinearLayout
@@ -102,15 +109,18 @@
             android:layout_height="match_parent">
         <Button
                 android:text="0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button3" android:layout_weight="1"/>
+                android:layout_width="60pt"
+                android:layout_height="30pt" android:id="@+id/button3" android:layout_weight="1"
+                android:background="@color/whiteback"/>
         <Button
                 android:text="."
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="1"/>
+                android:layout_width="30pt"
+                android:layout_height="30pt" android:id="@+id/button2" android:layout_weight="1"
+                android:background="@color/whiteback"/>
         <Button
                 android:text="="
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button" android:layout_weight="1"/>
+                android:layout_width="30pt"
+                android:layout_height="30pt" android:id="@+id/button" android:layout_weight="1"
+                android:background="@color/buop" android:textColor="@color/white"/>
     </LinearLayout>
 </LinearLayout>
