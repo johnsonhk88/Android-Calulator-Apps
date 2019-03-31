@@ -15,7 +15,12 @@ class MainActivity : AppCompatActivity() {
 
     fun butNumberEvent(view: View)
     {
-
+        if(isNewOp)
+        {
+            // clear display value
+            edShowNum.setText("")
+        }
+        isNewOp= false
         val butSelect = view as Button
         var butClickValue : String=  edShowNum.text.toString()   // get display value
         // check button Select
@@ -61,4 +66,55 @@ class MainActivity : AppCompatActivity() {
         }
         edShowNum.setText(butClickValue) //
     }
+    // storge current operation
+ var opCode: String = "*"
+ var oldValue : String = ""
+ var isNewOp : Boolean= true
+    fun butOpEvent(view:View)
+    {
+        val butSelect = view as Button
+        // check button Select
+        when(butSelect.id) {
+            butMul.id -> {
+                opCode= "*"
+            }
+            butDiv.id -> {
+                opCode = "/"
+            }
+            butSub.id -> {
+                opCode = "-"
+            }
+            butSum.id -> {
+                opCode = "+"
+            }
+        }
+        oldValue = edShowNum.text.toString()
+        isNewOp =true // clear show value
+    }
+
+    //  Equal function
+    fun butEuqEvent(view: View){
+        val newValue: String = edShowNum.text.toString()
+        var finalNum: Double? = null
+        //
+        when(opCode)
+        {
+            "*"->{
+               finalNum= oldValue.toDouble() * newValue.toDouble()
+            }
+            "/"->{
+                finalNum= oldValue.toDouble() / newValue.toDouble()
+            }
+            "+"->{
+                finalNum= oldValue.toDouble() + newValue.toDouble()
+            }
+            "-"->{
+                finalNum= oldValue.toDouble() - newValue.toDouble()
+            }
+
+        }
+        edShowNum.setText(finalNum.toString())
+        isNewOp= true
+    }
+
 }
