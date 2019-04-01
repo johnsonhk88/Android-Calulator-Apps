@@ -27,8 +27,8 @@
                     android:text="AC"
                     android:layout_marginRight="1pt"
                     android:layout_width="30pt"
-                    android:layout_height="30pt" android:id="@+id/button15" android:background="@color/whiteback"
-                    android:layout_weight="1" android:textSize="18sp"/>
+                    android:layout_height="30pt" android:id="@+id/butClear" android:background="@color/whiteback"
+                    android:layout_weight="1" android:textSize="18sp" android:onClick="butClearEvent"/>
             <Button
                     android:text="+/-"
                     android:layout_marginRight="1pt"
@@ -41,8 +41,8 @@
                     android:layout_marginRight="1pt"
                     android:textSize="18sp"
                     android:layout_width="30pt"
-                    android:layout_height="30pt" android:id="@+id/button13" android:background="@color/whiteback"
-                    android:layout_weight="1"/>
+                    android:layout_height="30pt" android:id="@+id/butPresent" android:background="@color/whiteback"
+                    android:layout_weight="1" android:onClick="butPrecentEvent"/>
             <Button
                     android:text="\u00f7"
                     android:textSize="18sp"

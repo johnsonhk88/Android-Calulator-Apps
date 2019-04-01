@@ -117,4 +117,17 @@ class MainActivity : AppCompatActivity() {
         isNewOp= true
     }
 
+
+    fun butPrecentEvent(view:View){
+        val number = edShowNum.text.toString().toDouble()/100
+
+        edShowNum.setText(number.toString())
+        isNewOp= true // request new operation
+
+    }
+
+    fun butClearEvent(view: View) {
+        edShowNum.setText("0")
+        isNewOp= true
+    }
 }
