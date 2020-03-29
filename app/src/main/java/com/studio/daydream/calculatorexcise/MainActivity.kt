@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+
+    // Button Number press Event
     fun butNumberEvent(view: View)
     {
         if(isNewOp)
@@ -22,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         }
         isNewOp= false
         val butSelect = view as Button
-        var butClickValue : String=  edShowNum.text.toString()   // get display value
+        var butClickValue : String=  edShowNum.text.toString()   // get display value (number)
         // check button Select
         when(butSelect.id)
         {
@@ -64,25 +66,26 @@ class MainActivity : AppCompatActivity() {
                 butClickValue = "-" + butClickValue
             }
         }
-        edShowNum.setText(butClickValue) //
+        edShowNum.setText(butClickValue) // Show number display
     }
     // storge current operation
  var opCode: String = "*"
  var oldValue : String = ""
  var isNewOp : Boolean= true
+    // Handle Math operation button Press event
     fun butOpEvent(view:View)
     {
         val butSelect = view as Button
-        // check button Select
+        // check button Select id
         when(butSelect.id) {
             butMul.id -> {
-                opCode= "*"
+                opCode= "*"  // set mulitple operation
             }
             butDiv.id -> {
-                opCode = "/"
+                opCode = "/"  // set divide operation
             }
             butSub.id -> {
-                opCode = "-"
+                opCode = "-"  // set  operation
             }
             butSum.id -> {
                 opCode = "+"
@@ -92,7 +95,7 @@ class MainActivity : AppCompatActivity() {
         isNewOp =true // clear show value
     }
 
-    //  Equal function
+    //  Equal function button Press Event for calulate the result
     fun butEuqEvent(view: View){
         val newValue: String = edShowNum.text.toString()
         var finalNum: Double? = null
@@ -113,11 +116,11 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-        edShowNum.setText(finalNum.toString())
+        edShowNum.setText(finalNum.toString())  // Show the final math result
         isNewOp= true
     }
 
-
+    // Handle Button Precentage Press Event
     fun butPrecentEvent(view:View){
         val number = edShowNum.text.toString().toDouble()/100
 
@@ -126,6 +129,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    // Handle Clear Button Press Event
     fun butClearEvent(view: View) {
         edShowNum.setText("0")
         isNewOp= true
